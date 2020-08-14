@@ -1,0 +1,10 @@
+$backcolor: green;
+
+body{
+    background: $backcolor;
+}
+
+
+header{
+    background-color: blue($color: #000000);
+}
