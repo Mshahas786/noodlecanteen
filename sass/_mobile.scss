@@ -1,0 +1,64 @@
+
+
+
+@media screen and (max-width: 500px){
+    .top-nav{
+      background-color: black;
+      display: none;
+    
+      ul{
+        margin: 0 10px;
+        border: 1px solid maroon;
+        li{
+          list-style: none;
+          height: 40px;
+          width:100%;
+          background: pink;
+          margin: 1% 0;
+          text-align:center;
+          // border: 1px solid maroon;
+          font-size: 1.2rem;
+          font-weight: bold;
+          a:link{
+            color: maroon;
+            text-decoration: none;
+    
+          }
+        }
+      }
+    }
+    .logo-container{
+        border: 1px solid red;
+        @include dimension(80%,100px);
+        margin:0;
+        float:left;
+        }
+        .logo{
+          @include dimension(10%, auto);
+          margin: 0px;
+          border: 1px solid blue;
+        }
+        .menu-icon-container{
+          float: right;
+          padding:10px 0;
+          @include dimension(20%,100px);
+          border: 1px solid blue;
+        }
+        
+        .menu-icon{
+          font-size: 45px;
+          color: maroon;
+          margin: 10px;
+          float:right;
+        }
+
+
+    .banner_cntr{
+        height: 100vh;
+        background-image: url(../images/bannerimg01.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+
+}//////////////mobile media query ends here

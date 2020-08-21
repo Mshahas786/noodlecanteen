@@ -1,28 +1,212 @@
-#logo_cntr {
-  width: 100%;
-  background-color: #e2202d; }
-
-.logo_img {
-  border: 2px solid green; }
-
-.brand_name {
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-size: 4rem;
-  text-align: center;
-  stroke-width: 1rem;
-  -webkit-text-stroke: 4px white;
-  border: 2px solid green;
-  float: right;
-  margin-right: 30%; }
-
 #myfooter {
   width: 100%;
   height: 1200px;
-  background-color: black;
   color: whitesmoke; }
 
+@media screen and (max-width: 500px) {
+  .top-nav {
+    background-color: black;
+    display: none; }
+    .top-nav ul {
+      margin: 0 10px;
+      border: 1px solid maroon; }
+      .top-nav ul li {
+        list-style: none;
+        height: 40px;
+        width: 100%;
+        background: pink;
+        margin: 1% 0;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold; }
+        .top-nav ul li a:link {
+          color: maroon;
+          text-decoration: none; }
+
+  .logo-container {
+    border: 1px solid red;
+    width: 80%;
+    height: 100px;
+    margin: 0;
+    float: left; }
+
+  .logo {
+    width: 10%;
+    height: auto;
+    margin: 0px;
+    border: 1px solid blue; }
+
+  .menu-icon-container {
+    float: right;
+    padding: 10px 0;
+    width: 20%;
+    height: 100px;
+    border: 1px solid blue; }
+
+  .menu-icon {
+    font-size: 45px;
+    color: maroon;
+    margin: 10px;
+    float: right; }
+
+  .banner_cntr {
+    height: 100vh;
+    background-image: url(../images/bannerimg01.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat; } }
+.para {
+  line-height: 22px;
+  letter-spacing: 1.2px;
+  width: 60%;
+  text-align: center;
+  margin: auto; }
+
+.top-nav a:link {
+  font-size: 1rem; }
+
+.image-heading {
+  font-size: 60px;
+  color: white;
+  margin: 20px 0; }
+
 * {
-  margin: 0; }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.row {
+  width: 100%; }
+
+.col {
+  float: left;
+  padding: 10px;
+  margin: 15px 0.15%; }
+
+.clearfix::after {
+  clear: both;
+  display: table;
+  content: ""; }
+
+.text-container {
+  margin-bottom: 20px; }
+
+@media screen and (max-width: 500px) {
+  .top-nav {
+    background-color: black;
+    display: none; }
+    .top-nav ul {
+      margin: 0 10px;
+      border: 1px solid maroon; }
+      .top-nav ul li {
+        list-style: none;
+        height: 40px;
+        width: 100%;
+        background: pink;
+        margin: 1% 0;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold; }
+        .top-nav ul li a:link {
+          color: maroon;
+          text-decoration: none; }
+
+  .logo-container {
+    border: 1px solid red;
+    width: 80%;
+    height: 100px;
+    margin: 0;
+    float: left; }
+
+  .logo {
+    width: 10%;
+    height: auto;
+    margin: 0px;
+    border: 1px solid blue; }
+
+  .menu-icon-container {
+    float: right;
+    padding: 10px 0;
+    width: 20%;
+    height: 100px;
+    border: 1px solid blue; }
+
+  .menu-icon {
+    font-size: 45px;
+    color: maroon;
+    margin: 10px;
+    float: right; }
+
+  .banner_cntr {
+    height: 100vh;
+    background-image: url(../images/bannerimg01.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat; } }
+@media screen and (min-width: 501px) {
+  header {
+    width: 100%;
+    height: auto;
+    background-color: red;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0; }
+
+  .logo_cntr {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    border: 1px solid blue; }
+
+  .brand_cntr {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    border: 1px solid black; }
+
+  .brand {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 5rem;
+    margin-top: 20px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    text-align: center; }
+
+  .logo {
+    max-width: 100%;
+    height: auto; }
+
+  .menu-icon-container, .menu-icon {
+    display: none; }
+
+  .top-nav {
+    width: 100%;
+    background-color: black;
+    padding: 0.5%;
+    display: block;
+    position: fixed;
+    top: 100px; }
+    .top-nav ul {
+      width: 80%;
+      margin: auto;
+      border: 1px solid yellow; }
+      .top-nav ul li {
+        color: white;
+        width: 14.5%;
+        text-align: center;
+        border: 1px solid green;
+        display: inline-block;
+        margin: 0 2.5%; }
+      .top-nav ul a:link {
+        color: yellow; }
+      .top-nav ul a:visited {
+        color: pink; }
+
+  .banner_cntr {
+    height: 100vh;
+    background-image: url(../images/bannerimg01.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat; } }
 
 /*# sourceMappingURL=style.css.map */

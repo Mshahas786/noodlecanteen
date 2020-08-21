@@ -1,7 +1,9 @@
-@import "desktop";
-@import "logo_cntr";
+@import "mixins";
 @import "footer";
+@import "mobile";
+@import "typography";
+@import "containers";
+@import "mobile";
+@import "desktop";
 
-* {
-  margin: 0;
-}
+
