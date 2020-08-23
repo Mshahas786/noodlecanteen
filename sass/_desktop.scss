@@ -1,105 +1,111 @@
-@media screen and (min-width: 501px){
+@media screen and (min-width: 501px) {
+  header {
+    @include dimension(100%, auto);
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 
-    header{
-        @include dimension(100%,auto);
-        background-color: red;
-        height: 100px;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }  
+  .logo_cntr {
+    position: absolute;
+    @include dimension(10%, 100%);
+    // border: 1px solid blue;
+  }
 
-    .logo_cntr{
-        position: absolute;
-        @include dimension(10%,100%);
-        border: 1px solid blue;
-    
-    }
-    
-    .brand_cntr{
-        position: relative;
-        top: 0;
-        left: 0;
-        @include dimension(100%,auto);
-        border: 1px solid black;
-    }
-    
-    .brand{
-        font-family: 'Luckiest Guy', cursive;
-        font-size: 5rem;
-        margin-top: 20px;
-        -webkit-text-stroke-width: 3px;
-        -webkit-text-stroke-color:white;
+  .brand_cntr {
+    position: relative; 
+    top: 0;
+    left: 0;
+    @include dimension(100%,100%);
+  }
+
+  .brand {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 5rem;
+    margin-top: 20px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    text-align: center;
+  }
+
+  .logo {
+    width: 70%;
+    height: auto;
+  }
+
+  .menu-icon-container,
+  .menu-icon {
+    display: none;
+  }
+
+  .top-nav {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    background-color: red;
+    display: block;
+    // border: 1px solid pink;
+
+    ul {
+      // padding: 2% 0;
+      width: 80%;
+      margin: auto;
+      // border: 1px solid yellow;
+      li {
+        color: black;
+        width: 14.5%;
         text-align: center;
-
-    }
-
-    .logo{
-        max-width: 100%;
-        height: auto;
-    }
-
-
-    .menu-icon-container, .menu-icon{
-      display: none;
-    }
-    .top-nav{
-        width: 100%;
-        background-color: black;
-        padding: .5% ;
-        display: block;
-        position: fixed;
-        top: 100px;
-        // border: 1px solid pink;
-  
-      ul{
-        // padding: 2% 0;
-        
-        width: 80%;
-        margin:auto;
-        border: 1px solid yellow;
-        li{
-            color: white;
-          width:14.5%;
-          text-align: center;
-          border: 1px solid green;
-          display: inline-block;
-          margin: 0 2.5%;
-        }
-          a:link{
-            color: yellow;
-  
-            // margin: 30px;
-            // padding:20px;
-          }
-          a:visited{
-            color: pink;
-          }
-  
+        // border: 1px solid green;
+        display: inline-block;
+        margin: 0 2.5%;
+        font-family: "Luckiest Guy", cursive;
+        font-size: 1.4rem;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
       }
+
+      a.ex2:hover, a.ex2:active
+      {font-size: 150%;}
+
+      a:hover {
+      color: red;
+      font-size: 5rem;
+      }
+
+      // a:link {
+      //   color: yellow;
+
+      //   // margin: 30px;
+      //   // padding:20px;
+      // }
+      // a:visited {
+      //   color: pink;
+      // }
+      
     }
+  }
 
-    
+  
+  .banner_cntr {
+    height: 100vh;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url(../images/bannerimg01.jpg),;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-    
+  #oderonline_cntr{
+    top: 0em;
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+  }
 
-    .banner_cntr{
-        height: 100vh;
-        background-image: url(../images/bannerimg01.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-}//////////////Desktop media query ends here
+  #menu{
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+  }
+} //////////////Desktop media query ends here
