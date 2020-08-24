@@ -1,7 +1,7 @@
 @media screen and (min-width: 501px) {
   header {
     @include dimension(100%, auto);
-    background-color: red;
+    background-color: #E2202D;
     position: fixed;
     top: 0;
     left: 0;
@@ -43,7 +43,7 @@
     position: relative;
     z-index: -1;
     width: 100%;
-    background-color: red;
+    background-color: #E2202D;
     display: block;
     // border: 1px solid pink;
 
@@ -69,7 +69,7 @@
       {font-size: 150%;}
 
       a:hover {
-      color: red;
+      color: #E2202D;
       font-size: 5rem;
       }
 
@@ -96,16 +96,70 @@
     background-repeat: no-repeat;
   }
 
-  #oderonline_cntr{
-    top: 0em;
-    width: 100%;
+  #oderonline{
+    background-color: #F58F31;
     height: 100vh;
-    background-color: yellow;
+  }
+
+  .order_text_cntr{
+  width: 100%;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+button{
+  width: 20%;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+
+  .order_headline{
+   font-family: "Luckiest Guy", cursive;
+   font-size: 2rem;
+   padding: 1%;
+   color:black;
+  //  -webkit-text-stroke-width: 1px;
+  //  -webkit-text-stroke-color:black;
+   
+  }
+
+  .order_headline:hover {
+    color: black;
+    background-color: #E2202D;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:white;
+  }
+  
+  .delivery_boy{
+    width: 50%;
+    padding: 1%;
+  }
+  
+  .delivery_home{
+    width: 50%;
+    padding: 1%;
+    float: right;
+  }
+
+  .home_delivery_img{
+    float: right;
   }
 
   #menu{
     width: 100%;
-    height: 100vh;
+    height: 500px;
     background-color: green;
   }
+
+
+
+
+
+
+
 } //////////////Desktop media query ends here
