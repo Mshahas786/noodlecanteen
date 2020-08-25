@@ -38,7 +38,7 @@
       <nav class="top-nav">
         <ul class="top-list">
           <li id="home" class="top-nav-list">
-            <a class="top-nav-link" href="#home"></a>HOME
+            <a class="top-nav-link" href="header"></a>HOME
           </li>
           <li id="about" class="top-nav-list">
             <a class="top-nav-link" href="#menu"></a>MENU
@@ -75,26 +75,57 @@
     </div>
 
     <div id="oderonline">
-
-      
       <div class="delivery_home">
-        <img class="home_delivery_img" src="images/delivery01.png" alt="">
+        <img class="home_delivery_img" src="images/delivery01.png" alt="" />
       </div>
 
       <div class="order_text_cntr">
         <button class="order_headline">0RDER 0NLINE</button>
       </div>
 
-
       <div class="delivery_boy">
-        <img class="delivery_bike_img" src="images/delivery.png" alt="">
+        <img class="delivery_bike_img" src="images/delivery.png" alt="" />
       </div>
-
     </div>
+
+
+
+
 
     <div id="menu">
+      <!-- Control buttons -->
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">
+          ALL DISHES
+        </button>
+        <button class="btn" onclick="filterSelection('cars')">RICE DISHES</button>
+        <button class="btn" onclick="filterSelection('animals')">
+          SOUP NOODLES
+        </button>
+        <button class="btn" onclick="filterSelection('fruits')">WORK TOSSED NOODLES</button>
+      </div>
 
+      <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+      <div class="container">
+        <div class="filterDiv cars">BMW</div>
+        <div class="filterDiv colors fruits">Orange</div>
+        <div class="filterDiv cars">Volvo</div>
+        <div class="filterDiv colors">Red</div>
+        <div class="filterDiv cars animals">Mustang</div>
+        <div class="filterDiv colors">Blue</div>
+        <div class="filterDiv animals">Cat</div>
+        <div class="filterDiv animals">Dog</div>
+        <div class="filterDiv fruits">Melon</div>
+        <div class="filterDiv fruits animals">Kiwi</div>
+        <div class="filterDiv fruits">Banana</div>
+        <div class="filterDiv fruits">Lemon</div>
+        <div class="filterDiv animals">Cow</div>
+      </div>
     </div>
+
+
+
+
 
     <div id="aboutus"></div>
 
@@ -154,5 +185,7 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
